@@ -20,16 +20,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsY-xM-Zw1">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGJ-px-h8J">
+                                        <state key="normal" title="SO Paid" backgroundImage="heartRight">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="126" id="81M-lA-x4Z"/>
+                                    <constraint firstItem="qGJ-px-h8J" firstAttribute="leading" secondItem="RsY-xM-Zw1" secondAttribute="leading" id="BnM-Jz-7xG"/>
+                                    <constraint firstItem="qGJ-px-h8J" firstAttribute="top" secondItem="RsY-xM-Zw1" secondAttribute="top" id="C8l-UU-eOy"/>
+                                    <constraint firstAttribute="bottom" secondItem="qGJ-px-h8J" secondAttribute="bottom" id="Z0Y-mk-z24"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGJ-px-h8J">
-                                <state key="normal" title="SO Paid" backgroundImage="heartRight">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fps-d2-Oh3">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qJ-mn-H5P">
@@ -56,14 +61,14 @@
                                 <color key="textColor" red="0.30588235294117649" green="0.20392156862745098" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxA-36-0uh">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlf-Ea-Se4">
                                 <state key="normal" title="settle">
                                     <color key="titleColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxA-36-0uh">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -81,10 +86,7 @@
                             <constraint firstItem="RsY-xM-Zw1" firstAttribute="leading" secondItem="Fps-d2-Oh3" secondAttribute="trailing" id="dFe-qu-8mm"/>
                             <constraint firstItem="Fps-d2-Oh3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="ewL-ad-jd1"/>
                             <constraint firstItem="Fps-d2-Oh3" firstAttribute="top" secondItem="zxA-36-0uh" secondAttribute="bottom" constant="8" id="h0H-4V-hWY"/>
-                            <constraint firstItem="qGJ-px-h8J" firstAttribute="top" secondItem="RsY-xM-Zw1" secondAttribute="top" id="jte-wq-Jtk"/>
                             <constraint firstItem="RsY-xM-Zw1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="n0q-WN-AvK"/>
-                            <constraint firstItem="qGJ-px-h8J" firstAttribute="leading" secondItem="Fps-d2-Oh3" secondAttribute="trailing" id="n1a-Nb-53b"/>
-                            <constraint firstAttribute="bottom" secondItem="qGJ-px-h8J" secondAttribute="bottom" id="p6d-t5-FXT"/>
                             <constraint firstAttribute="trailing" secondItem="RsY-xM-Zw1" secondAttribute="trailing" id="qOC-N3-v1c"/>
                             <constraint firstItem="Hlf-Ea-Se4" firstAttribute="top" secondItem="09V-pc-cFs" secondAttribute="bottom" constant="-22" id="xln-jq-sbv"/>
                         </constraints>
