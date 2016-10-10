@@ -8,7 +8,7 @@
 
 /// Defines the split percentage of an amount between two parties (invariant).
 struct SplitModel {
-  private let split: Float
+  let split: Float
   
   /// Ensures the division amount is a number in the range [0, 1], returns nil otherwise.
   init?(withAmount: Float) {
