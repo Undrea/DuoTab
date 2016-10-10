@@ -92,6 +92,14 @@
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="balanceAmountLabel" destination="09V-pc-cFs" id="Ckf-hX-XDH"/>
+                        <outlet property="balanceHeaderLabel" destination="KoA-dT-u1K" id="TFn-sa-blf"/>
+                        <outlet property="contentContainer" destination="zxA-36-0uh" id="2fE-5a-k6n"/>
+                        <outlet property="mePayButton" destination="1qJ-mn-H5P" id="9ac-PI-a1n"/>
+                        <outlet property="partnerPayButton" destination="qGJ-px-h8J" id="Xxb-Y2-pb6"/>
+                        <outlet property="settleButton" destination="Hlf-Ea-Se4" id="R5i-Ta-fKA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="O4u-RY-NN9">
