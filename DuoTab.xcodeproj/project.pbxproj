@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E2A015B1DAC49D7009E7160 /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A015A1DAC49D7009E7160 /* BalanceModel.swift */; };
+		5E2A015F1DAC4A4D009E7160 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A015E1DAC4A4D009E7160 /* TransactionModel.swift */; };
 		5E2A01611DAC4C65009E7160 /* SplitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A01601DAC4C65009E7160 /* SplitModel.swift */; };
 		5E2A01631DAC4CC7009E7160 /* ExpenseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A01621DAC4CC7009E7160 /* ExpenseType.swift */; };
 		5E2A01651DAC4FA1009E7160 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A01641DAC4FA1009E7160 /* UserType.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		5E2A015A1DAC49D7009E7160 /* BalanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
+		5E2A015E1DAC4A4D009E7160 /* TransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		5E2A01601DAC4C65009E7160 /* SplitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitModel.swift; sourceTree = "<group>"; };
 		5E2A01621DAC4CC7009E7160 /* ExpenseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseType.swift; sourceTree = "<group>"; };
 		5E2A01641DAC4FA1009E7160 /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				5E2A015A1DAC49D7009E7160 /* BalanceModel.swift */,
+				5E2A015E1DAC4A4D009E7160 /* TransactionModel.swift */,
 				5E2A01601DAC4C65009E7160 /* SplitModel.swift */,
 				5E2A01621DAC4CC7009E7160 /* ExpenseType.swift */,
 				5E2A01641DAC4FA1009E7160 /* UserType.swift */,
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E2A015F1DAC4A4D009E7160 /* TransactionModel.swift in Sources */,
 				5E606AD41DA9BAF300D98F2E /* HomeViewController.swift in Sources */,
 				5E2A01611DAC4C65009E7160 /* SplitModel.swift in Sources */,
 				5E606B0A1DAC238600D98F2E /* HomeViewModel.swift in Sources */,
