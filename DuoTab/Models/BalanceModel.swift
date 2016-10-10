@@ -10,6 +10,24 @@ import Foundation
 
 /// Maintains the running tab between the couple.
 struct BalanceModel {
-  /// If the balance is positive, then "Me" owes "SO", if the balance is negative, then "SO" owes "Me"
   var amount: Double
+  
+  /// If the balance is positive, then "Me" owes "SO", if the balance is negative, then "SO" owes "Me"
+  var userOwing: UserType? {
+    if amount > 0 {
+      return UserType.SO
+    } else if amount < 0 {
+      return UserType.Me
+    } else /* amount == 0 */ {
+      return nil // A zero balance means neither user is owing
+    }
+  }
+  
+  /// Returns the amount as a currency value in absolute terms
+  var currencyValue: String? {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .currency
+    
+    return formatter.string(from: NSNumber(value: abs(amount)))
+  }
 }
