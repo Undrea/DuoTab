@@ -16,3 +16,14 @@ enum UserType {
   case Me
   case SO
 }
+
+func ==(lhs: UserType, rhs: UserType) -> Bool {
+  switch (lhs, rhs) {
+  case (.Me, .Me):
+    return true
+  case (.SO, .SO):
+    return true
+  default:
+    return false
+  }
+}
