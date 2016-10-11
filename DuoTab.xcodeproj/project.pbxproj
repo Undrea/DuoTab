@@ -16,6 +16,7 @@
 		5E2A01671DAC56C7009E7160 /* BalanceModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A01661DAC56C7009E7160 /* BalanceModelTests.swift */; };
 		5E2A01691DAC5B02009E7160 /* SplitModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A01681DAC5B02009E7160 /* SplitModelTests.swift */; };
 		5E2A016B1DAC7404009E7160 /* UserTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A016A1DAC7404009E7160 /* UserTypeTests.swift */; };
+		5E2A016D1DAC82E9009E7160 /* BalanceModel+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A016C1DAC82E9009E7160 /* BalanceModel+Store.swift */; };
 		5E2A016F1DAC8A01009E7160 /* StoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A016E1DAC8A01009E7160 /* StoreKey.swift */; };
 		5E606AD21DA9BAF300D98F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606AD11DA9BAF300D98F2E /* AppDelegate.swift */; };
 		5E606AD41DA9BAF300D98F2E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606AD31DA9BAF300D98F2E /* HomeViewController.swift */; };
@@ -54,6 +55,7 @@
 		5E2A01661DAC56C7009E7160 /* BalanceModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceModelTests.swift; sourceTree = "<group>"; };
 		5E2A01681DAC5B02009E7160 /* SplitModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitModelTests.swift; sourceTree = "<group>"; };
 		5E2A016A1DAC7404009E7160 /* UserTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeTests.swift; sourceTree = "<group>"; };
+		5E2A016C1DAC82E9009E7160 /* BalanceModel+Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BalanceModel+Store.swift"; sourceTree = "<group>"; };
 		5E2A016E1DAC8A01009E7160 /* StoreKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreKey.swift; sourceTree = "<group>"; };
 		5E606ACE1DA9BAF300D98F2E /* DuoTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E606AD11DA9BAF300D98F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		5E606B061DAC228100D98F2E /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				5E2A016C1DAC82E9009E7160 /* BalanceModel+Store.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				5E2A015D1DAC4A3D009E7160 /* HistoryModel.swift in Sources */,
 				5E2A01611DAC4C65009E7160 /* SplitModel.swift in Sources */,
 				5E606B0A1DAC238600D98F2E /* HomeViewModel.swift in Sources */,
+				5E2A016D1DAC82E9009E7160 /* BalanceModel+Store.swift in Sources */,
 				5E2A015B1DAC49D7009E7160 /* BalanceModel.swift in Sources */,
 				5E2A01631DAC4CC7009E7160 /* ExpenseType.swift in Sources */,
 				5E2A01651DAC4FA1009E7160 /* UserType.swift in Sources */,
