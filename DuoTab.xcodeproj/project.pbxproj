@@ -15,6 +15,7 @@
 		5E2A01651DAC4FA1009E7160 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A01641DAC4FA1009E7160 /* UserType.swift */; };
 		5E2A01671DAC56C7009E7160 /* BalanceModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A01661DAC56C7009E7160 /* BalanceModelTests.swift */; };
 		5E2A01691DAC5B02009E7160 /* SplitModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A01681DAC5B02009E7160 /* SplitModelTests.swift */; };
+		5E2A016B1DAC7404009E7160 /* UserTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A016A1DAC7404009E7160 /* UserTypeTests.swift */; };
 		5E606AD21DA9BAF300D98F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606AD11DA9BAF300D98F2E /* AppDelegate.swift */; };
 		5E606AD41DA9BAF300D98F2E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606AD31DA9BAF300D98F2E /* HomeViewController.swift */; };
 		5E606AD71DA9BAF300D98F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E606AD51DA9BAF300D98F2E /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		5E2A01641DAC4FA1009E7160 /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		5E2A01661DAC56C7009E7160 /* BalanceModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceModelTests.swift; sourceTree = "<group>"; };
 		5E2A01681DAC5B02009E7160 /* SplitModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitModelTests.swift; sourceTree = "<group>"; };
+		5E2A016A1DAC7404009E7160 /* UserTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTypeTests.swift; sourceTree = "<group>"; };
 		5E606ACE1DA9BAF300D98F2E /* DuoTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E606AD11DA9BAF300D98F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E606AD31DA9BAF300D98F2E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				5E606AE61DA9BAF400D98F2E /* DuoTabTests.swift */,
 				5E606AE81DA9BAF400D98F2E /* Info.plist */,
 				5E2A01681DAC5B02009E7160 /* SplitModelTests.swift */,
+				5E2A016A1DAC7404009E7160 /* UserTypeTests.swift */,
 			);
 			path = DuoTabTests;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				5E2A01671DAC56C7009E7160 /* BalanceModelTests.swift in Sources */,
 				5E2A01691DAC5B02009E7160 /* SplitModelTests.swift in Sources */,
+				5E2A016B1DAC7404009E7160 /* UserTypeTests.swift in Sources */,
 				5E606AE71DA9BAF400D98F2E /* DuoTabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
