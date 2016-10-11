@@ -64,4 +64,30 @@ class BalanceModelTests: XCTestCase {
     let balance = BalanceModel(amount: 9.999)
     XCTAssertEqual(balance.currencyValue, "$10.00")
   }
+  
+  /// Store Extension Tests
+  func testSavingBalanceToNSUserDefaults() {
+    let balance = BalanceModel(amount: 10.0)
+    balance.save(forKey: "TestBalanceKey")
+  }
+  
+  func testLoadingSavedBalance() {
+    // Ensure key is in NSUserDefaults with value of 10.0
+    UserDefaults.standard.set(10.0, forKey: "TestBalanceKey")
+    
+    // Check if we can load that value
+    if let balance = BalanceModel.loadBalance(forKey: "TestBalanceKey") {
+      XCTAssertEqual(balance.amount, 10.0)
+    } else {
+      XCTFail()
+    }
+  }
+  
+  func testLoadReturnsNilWhenNoKeyPresent() {
+    // Ensure key is in NSUserDefaults with value of 10.0
+    UserDefaults.standard.removeObject(forKey: "TestBalanceKey")
+
+    // Check if we can load that value
+    XCTAssertNil(BalanceModel.loadBalance(forKey: "TestBalanceKey"))
+  }
 }
