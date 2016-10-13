@@ -37,6 +37,8 @@ class HomeViewController: UIViewController {
     super.viewDidLoad()
     
     balanceHeaderLabel.text = viewModel.balanceHeaderText
+    balanceDollarsLabel.text = viewModel.dollarsWithDecimal
+    balanceCentsLabel.text = viewModel.cents
     
     // TODO: Add history element if history is present; otherwise, show initial onboarding for the empty state
   }

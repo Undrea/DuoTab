@@ -11,6 +11,10 @@ import Foundation
 struct HomeViewModel {
   let balanceHeaderText: String
   let balanceOwingAmount: String
+  
+  let dollarsWithDecimal: String
+  let cents: String
+  
   let historyAbbreviated: [TransactionModel]
   
   init(withBalance balance: BalanceModel, withHistory history: HistoryModel) {
@@ -26,6 +30,12 @@ struct HomeViewModel {
     }
     
     balanceOwingAmount = balance.currencyValue ?? ""
+    dollarsWithDecimal = balance.dollars + "."
+    if let centsInt = Int(balance.cents) {
+      cents = String(format: "%02d", centsInt) // Add leading zero to the cents
+    } else {
+      cents = ""
+    }
     
     // Only show the last ten transactions at most
     if history.transactions.count <= 10 {
