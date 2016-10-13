@@ -10,7 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
   @IBOutlet weak var balanceHeaderLabel: UILabel!
-  @IBOutlet weak var balanceAmountLabel: UILabel!
+  
+  @IBOutlet weak var balanceDollarsLabel: UILabel!
+  @IBOutlet weak var balanceCentsLabel: UILabel!
+  
   @IBOutlet weak var settleButton: UIButton!
   @IBOutlet weak var contentContainer: UIView!
   
@@ -34,7 +37,6 @@ class HomeViewController: UIViewController {
     super.viewDidLoad()
     
     balanceHeaderLabel.text = viewModel.balanceHeaderText
-    balanceAmountLabel.text = viewModel.balanceOwingAmount
     
     // TODO: Add history element if history is present; otherwise, show initial onboarding for the empty state
   }
