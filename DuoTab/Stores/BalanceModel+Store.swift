@@ -14,7 +14,7 @@ extension BalanceModel {
   /// Overwrite the currently persisted balance with this balance.
   func save(forKey: String = StoreKey.Balance.rawValue) {
     let defaults = UserDefaults.standard
-    defaults.set(amount, forKey: forKey)
+    defaults.set(balanceInCents, forKey: forKey)
   }
   
   /// Load from memory the saved balance.
@@ -23,8 +23,8 @@ extension BalanceModel {
   static func loadBalance(forKey: String = StoreKey.Balance.rawValue) -> BalanceModel? {
     let defaults = UserDefaults.standard
     
-    if let amount = defaults.object(forKey: forKey) as? Double {
-      return BalanceModel(amount: amount)
+    if let amountInCents = defaults.object(forKey: forKey) as? Double {
+      return BalanceModel(amount: Double(amountInCents) / 100) // Convert to dollars
     } else {
       return nil
     }
