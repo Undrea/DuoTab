@@ -29,9 +29,9 @@ struct HomeViewModel {
     
     // Only show the last ten transactions at most
     if history.transactions.count <= 10 {
-      historyAbbreviated = Array(history.transactions[0..<10])
-    } else {
       historyAbbreviated = history.transactions
+    } else {
+      historyAbbreviated = Array(history.transactions[0..<10])
     }
   }
   
